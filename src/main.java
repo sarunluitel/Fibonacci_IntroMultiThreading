@@ -27,9 +27,12 @@ class main
   {
     threadA.start();
     threadB.start();
+    threadA.printInfo();// print current computation.
+    threadB.printInfo();
+    System.out.println();
     try
     {
-      int i=0;
+      int i=1;
       for (;;)//infinite loop to check the threads
       {
         i++;
